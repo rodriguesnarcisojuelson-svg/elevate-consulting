@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Política de Privacidade — Elevate Consulting">
+<title>Política de Privacidade · Elevate Consulting</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --forest:    #1C3A2B;
+  --forest-mid:#254D39;
+  --gold:      #C9A84C;
+  --gold-lt:   #E2C27A;
+  --gold-dk:   #A07830;
+  --ivory:     #F5F0E8;
+  --charcoal:  #0F1F17;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  background: var(--charcoal);
+  color: var(--ivory);
+  font-family: Georgia, serif;
+  overflow-x: hidden;
+}
+
+/* NAV */
+nav {
+position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+background: rgba(15,31,23,.95);
+backdrop-filter: blur(14px);
+border-bottom: 1px solid rgba(201,168,76,.12);
+padding: 0 48px; height: 64px;
+display: flex; align-items: center; justify-content: space-between;
+}
+.nav-logo {
+display: flex; align-items: center; gap: 10px;
+text-decoration: none;
+}
+.nav-logo-name {
+font-size: 15px; font-weight: 700; color: var(–ivory);
+letter-spacing: .1em; line-height: 1;
+}
+.nav-logo-name span { color: var(–gold); }
+.nav-logo-sub {
+font-size: 7px; letter-spacing: .4em; color: rgba(245,240,232,.35);
+text-transform: uppercase; font-family: sans-serif; margin-top: 3px;
+}
+.nav-back {
+display: flex; align-items: center; gap: 8px;
+color: rgba(245,240,232,.5); font-size: 10px;
+letter-spacing: .15em; text-transform: uppercase;
+text-decoration: none; font-family: sans-serif;
+transition: color .2s;
+}
+.nav-back:hover { color: var(–gold-lt); }
+
+/* HEADER */
+.page-header {
+padding: 120px 48px 60px;
+background:
+radial-gradient(ellipse at 10% 50%, rgba(37,77,57,.4) 0%, transparent 55%),
+var(–charcoal);
+border-bottom: 1px solid rgba(201,168,76,.1);
+}
+.page-header-inner { max-width: 760px; margin: 0 auto; }
+.header-label {
+font-size: 9px; letter-spacing: .35em; text-transform: uppercase;
+color: var(–gold-dk); margin-bottom: 14px; font-family: sans-serif;
+}
+.page-header h1 {
+font-size: clamp(2rem, 4vw, 3rem);
+font-weight: 300; color: var(–ivory);
+letter-spacing: .04em; margin-bottom: 16px;
+}
+.header-date {
+font-size: .75rem; color: rgba(245,240,232,.35);
+font-family: sans-serif; letter-spacing: .08em;
+}
+.gold-line { width: 50px; height: 1px; background: var(–gold); opacity: .5; margin-top: 20px; }
+
+/* CONTENT */
+.content {
+max-width: 760px; margin: 0 auto;
+padding: 64px 48px 100px;
+}
+.article {
+margin-bottom: 44px;
+padding-bottom: 44px;
+border-bottom: 1px solid rgba(201,168,76,.07);
+}
+.article:last-child { border-bottom: none; }
+.article-num {
+font-size: 9px; letter-spacing: .3em; text-transform: uppercase;
+color: var(–gold-dk); font-family: sans-serif; margin-bottom: 10px;
+}
+.article h2 {
+font-size: 1.15rem; font-weight: 400; color: var(–ivory);
+letter-spacing: .04em; margin-bottom: 16px; font-family: Georgia, serif;
+}
+.article p {
+font-size: .9rem; color: rgba(245,240,232,.68);
+line-height: 1.95; font-family: sans-serif; font-weight: 300;
+margin-bottom: 12px;
+}
+.article p:last-child { margin-bottom: 0; }
+.article strong { color: var(–ivory); font-weight: 500; }
+.article em { color: rgba(245,240,232,.5); font-style: italic; }
+.highlight { color: var(–gold-lt); }
+.article ul {
+padding-left: 20px; margin: 12px 0;
+}
+.article ul li {
+font-size: .9rem; color: rgba(245,240,232,.6);
+line-height: 1.9; font-family: sans-serif; font-weight: 300;
+margin-bottom: 6px;
+}
+
+/* FOOTER */
+footer {
+background: var(–forest);
+border-top: 1px solid rgba(201,168,76,.1);
+padding: 28px 48px;
+display: flex; align-items: center; justify-content: space-between;
+}
+.footer-copy {
+font-size: 9px; color: rgba(245,240,232,.3);
+font-family: sans-serif; letter-spacing: .1em;
+}
+.footer-back {
+font-size: 9px; color: rgba(201,168,76,.6);
+font-family: sans-serif; letter-spacing: .1em;
+text-decoration: none; transition: color .2s;
+}
+.footer-back:hover { color: var(–gold); }
+
+@media (max-width: 640px) {
+nav { padding: 0 20px; }
+.page-header { padding: 100px 24px 48px; }
+.content { padding: 48px 24px 80px; }
+footer { padding: 24px; flex-direction: column; gap: 12px; text-align: center; }
+}
+</style>
+
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <svg width="34" height="34" viewBox="0 0 34 34">
+      <path d="M 16.6 30 C 5 27, 2 18, 5 9 C 9 1, 18 0, 25 5" stroke="#C9A84C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+      <path d="M 8 16 C 2 12, 2 5, 8 7 C 13 9, 12 16, 8 16" stroke="#C9A84C" stroke-width="1.2" fill="rgba(201,168,76,.18)"/>
+      <path d="M 22 6 C 20 1, 27 0, 28 6 C 29 11, 23 12, 22 6" stroke="#C9A84C" stroke-width="1.2" fill="rgba(201,168,76,.18)"/>
+      <text x="17.5" y="23" text-anchor="middle" font-size="15" font-family="Georgia,serif" font-weight="700" fill="#C9A84C">E</text>
+    </svg>
+    <div>
+      <div class="nav-logo-name">ELEVATE<span>.</span></div>
+      <div class="nav-logo-sub">CONSULTING</div>
+    </div>
+  </a>
+  <a class="nav-back" href="index.html">← Voltar ao site</a>
+</nav>
+
+<!-- HEADER -->
+
+<div class="page-header">
+  <div class="page-header-inner">
+    <p class="header-label">Elevate Consulting · Informação Legal</p>
+    <h1>Política de Privacidade</h1>
+    <p class="header-date">Última actualização: Janeiro 2026</p>
+    <div class="gold-line"></div>
+  </div>
+</div>
+
+<!-- CONTENT -->
+
+<div class="content">
+
+  <div class="article">
+    <p class="article-num">Artigo 01</p>
+    <h2>Responsável pelo Tratamento</h2>
+    <p>A <strong>Elevate Consulting</strong>, com presença em Portugal e Angola, é a entidade responsável pelo tratamento dos dados pessoais recolhidos através do website <em>elevateconsulting.pt</em>.</p>
+    <p>Para qualquer questão relacionada com privacidade ou protecção de dados, pode contactar-nos através de <span class="highlight">geral@elevateconsulting.pt</span></p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 02</p>
+    <h2>Dados Recolhidos</h2>
+    <p>Recolhemos apenas os dados que nos fornece voluntariamente através do formulário de contacto disponível no website:</p>
+    <ul>
+      <li>Nome completo</li>
+      <li>Endereço de email</li>
+      <li>Mensagem ou pedido de informação</li>
+    </ul>
+    <p>Não recolhemos cookies de rastreio, dados de navegação, informação de localização ou qualquer outro dado sem o seu conhecimento e consentimento explícito.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 03</p>
+    <h2>Finalidade do Tratamento</h2>
+    <p>Os dados recolhidos são utilizados exclusivamente para responder às suas solicitações, estabelecer contacto comercial e prestar os serviços de consultoria solicitados.</p>
+    <p>Os seus dados não serão utilizados para fins de marketing directo, newsletters ou comunicações não solicitadas sem o seu consentimento prévio e expresso.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 04</p>
+    <h2>Base Legal do Tratamento</h2>
+    <p>O tratamento dos seus dados pessoais baseia-se nas seguintes bases legais, nos termos do Regulamento Geral sobre a Protecção de Dados (RGPD):</p>
+    <ul>
+      <li><strong>Consentimento</strong> — Art. 6.º, n.º 1, al. a) do RGPD, quando fornece os seus dados voluntariamente.</li>
+      <li><strong>Interesse legítimo</strong> — Art. 6.º, n.º 1, al. f) do RGPD, na gestão de contactos e relações comerciais.</li>
+      <li><strong>Execução de contrato</strong> — Art. 6.º, n.º 1, al. b) do RGPD, quando existe uma relação contratual estabelecida.</li>
+    </ul>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 05</p>
+    <h2>Partilha e Transferência de Dados</h2>
+    <p>Os seus dados pessoais <strong>não são vendidos, alugados nem partilhados</strong> com terceiros para fins comerciais ou publicitários.</p>
+    <p>Em casos estritamente necessários à operação da empresa, os dados poderão ser partilhados com prestadores de serviços que actuem como subcontratantes, sempre sob acordos de confidencialidade e em conformidade com o RGPD.</p>
+    <p>Caso os dados sejam transferidos para fora do Espaço Económico Europeu, garantimos que essa transferência é realizada com as salvaguardas adequadas exigidas pela legislação aplicável.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 06</p>
+    <h2>Conservação dos Dados</h2>
+    <p>Os seus dados pessoais são conservados apenas pelo período estritamente necessário à finalidade para que foram recolhidos, ou enquanto existir uma relação comercial activa.</p>
+    <p>Após esse período, os dados são eliminados ou anonimizados de forma segura, salvo obrigação legal de conservação por período superior.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 07</p>
+    <h2>Os Seus Direitos</h2>
+    <p>Ao abrigo do RGPD, tem os seguintes direitos relativamente aos seus dados pessoais:</p>
+    <ul>
+      <li><strong>Direito de acesso</strong> — saber quais os dados que tratamos sobre si.</li>
+      <li><strong>Direito de rectificação</strong> — corrigir dados incorrectos ou incompletos.</li>
+      <li><strong>Direito ao apagamento</strong> — solicitar a eliminação dos seus dados ("direito a ser esquecido").</li>
+      <li><strong>Direito à limitação</strong> — restringir o tratamento dos seus dados em determinadas circunstâncias.</li>
+      <li><strong>Direito de oposição</strong> — opor-se ao tratamento baseado em interesse legítimo.</li>
+      <li><strong>Direito à portabilidade</strong> — receber os seus dados num formato estruturado e legível.</li>
+      <li><strong>Direito de reclamação</strong> — apresentar reclamação à CNPD (Comissão Nacional de Protecção de Dados) em <span class="highlight">www.cnpd.pt</span></li>
+    </ul>
+    <p>Para exercer qualquer um destes direitos, contacte-nos através de <span class="highlight">geral@elevateconsulting.pt</span> — responderemos no prazo máximo de 30 dias.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 08</p>
+    <h2>Segurança dos Dados</h2>
+    <p>Adoptamos medidas técnicas e organizacionais adequadas para proteger os seus dados pessoais contra acesso não autorizado, perda acidental, destruição ou alteração indevida.</p>
+    <p>O website utiliza protocolo HTTPS com certificado SSL, garantindo que a transmissão de dados é efectuada de forma encriptada e segura.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 09</p>
+    <h2>Cookies</h2>
+    <p>O website <em>elevateconsulting.pt</em> não utiliza cookies de rastreio, publicidade ou análise comportamental. Poderão ser utilizados cookies técnicos estritamente necessários ao funcionamento do website, que não requerem consentimento.</p>
+  </div>
+
+  <div class="article">
+    <p class="article-num">Artigo 10</p>
+    <h2>Alterações a Esta Política</h2>
+    <p>Reservamo-nos o direito de actualizar esta Política de Privacidade sempre que necessário, nomeadamente em caso de alterações legislativas ou mudanças nos nossos processos internos.</p>
+    <p>Quaisquer alterações relevantes serão publicadas nesta página com a respectiva data de actualização. Recomendamos que consulte esta página periodicamente.</p>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="footer-copy">© 2026 Elevate Consulting · Todos os direitos reservados.</div>
+  <a class="footer-back" href="index.html">← Voltar ao site</a>
+</footer>
+
+</body>
+</html>
