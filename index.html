@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Elevate Consulting — Consultoria de Gestão para PMEs em Portugal e Angola. Estratégia. Crescimento. Sustentabilidade.">
+<meta name="description" content="Elevate Consulting — Consultoria de Gestão para PMEs em Portugal e Angola. +40 projectos entregues. Estratégia. Crescimento. Sustentabilidade.">
 <title>Elevate Consulting</title>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -21,7 +21,7 @@
 html { scroll-behavior: smooth; font-size: 16px; }
 body { background: var(--charcoal); color: var(--ivory); font-family: Georgia, serif; overflow-x: hidden; }
 
-/* ── NAV ── */
+/* NAV */
 nav {
 position: fixed; top: 0; left: 0; right: 0; z-index: 100;
 background: rgba(15,31,23,.95); backdrop-filter: blur(14px);
@@ -43,7 +43,7 @@ display: flex; align-items: center; justify-content: space-between;
 .nav-cta { padding:8px 20px; background:var(–gold); color:var(–forest); border:none; border-radius:2px; font-size:9px; letter-spacing:.18em; text-transform:uppercase; font-weight:700; cursor:pointer; font-family:sans-serif; transition:opacity .2s; }
 .nav-cta:hover { opacity:.85; }
 
-/* ── HERO ── */
+/* HERO */
 #hero {
 min-height: 100vh; display: flex; align-items: center;
 background:
@@ -68,7 +68,14 @@ h1 em { color:var(–gold); font-style:italic; }
 .scroll-hint span { font-size:8px; letter-spacing:.3em; text-transform:uppercase; color:rgba(245,240,232,.28); font-family:sans-serif; }
 .scroll-line { width:1px; height:40px; background:linear-gradient(var(–gold), transparent); animation:pulse 2s infinite; }
 
-/* ── SECTIONS ── */
+/* NUMBERS */
+#numbers { background:var(–forest-mid); padding:60px 64px; border-top:1px solid rgba(201,168,76,.1); border-bottom:1px solid rgba(201,168,76,.1); }
+.numbers-grid { max-width:960px; margin:0 auto; display:grid; grid-template-columns:repeat(4,1fr); gap:2px; }
+.number-item { text-align:center; padding:32px 20px; }
+.number-value { font-size:clamp(2.4rem,4vw,3.2rem); font-weight:300; color:var(–gold); letter-spacing:.02em; line-height:1; margin-bottom:8px; }
+.number-label { font-size:.75rem; color:rgba(245,240,232,.55); font-family:sans-serif; font-weight:300; letter-spacing:.08em; line-height:1.5; }
+
+/* SECTIONS */
 section { padding:100px 64px; }
 .section-inner { max-width:960px; margin:0 auto; }
 .section-label { font-size:9px; letter-spacing:.35em; text-transform:uppercase; color:var(–gold-dk); margin-bottom:12px; font-family:sans-serif; }
@@ -76,7 +83,7 @@ h2 { font-size:clamp(1.8rem, 3.5vw, 2.8rem); font-weight:300; color:var(–ivory
 .section-sub { font-size:.9rem; color:rgba(245,240,232,.5); font-family:sans-serif; font-weight:300; max-width:440px; }
 .gold-line { width:60px; height:1px; background:var(–gold); margin-top:24px; opacity:.5; }
 
-/* ── SERVICES ── */
+/* SERVICES */
 #services { background:var(–forest); }
 .services-header { margin-bottom:52px; }
 .services-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; }
@@ -87,8 +94,18 @@ h2 { font-size:clamp(1.8rem, 3.5vw, 2.8rem); font-weight:300; color:var(–ivory
 .service-title { font-size:1rem; color:var(–ivory); margin-bottom:12px; letter-spacing:.03em; }
 .service-desc { font-size:.8rem; color:rgba(245,240,232,.55); line-height:1.85; font-family:sans-serif; font-weight:300; }
 
-/* ── ABOUT ── */
-#about { background:var(–charcoal); }
+/* METHODOLOGY */
+#methodology { background:var(–charcoal); }
+.method-grid { display:grid; grid-template-columns:repeat(5,1fr); gap:2px; margin-top:48px; }
+.method-step { padding:32px 20px; background:var(–forest-mid); border-top:3px solid transparent; transition:border-color .25s, background .25s; text-align:center; }
+.method-step:hover { border-color:var(–gold); background:var(–forest-lt); }
+.method-num { font-size:9px; letter-spacing:.25em; text-transform:uppercase; color:var(–gold); font-family:sans-serif; margin-bottom:12px; }
+.method-icon { font-size:20px; color:var(–gold-lt); margin-bottom:12px; }
+.method-title { font-size:.9rem; color:var(–ivory); margin-bottom:8px; letter-spacing:.03em; }
+.method-desc { font-size:.75rem; color:rgba(245,240,232,.5); line-height:1.7; font-family:sans-serif; font-weight:300; }
+
+/* ABOUT */
+#about { background:var(–forest); }
 .about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; }
 .about-text p { font-size:.9rem; color:rgba(245,240,232,.65); line-height:1.9; margin-bottom:20px; font-family:sans-serif; font-weight:300; }
 .about-quote { font-size:.95rem; color:var(–gold-lt); line-height:1.8; font-style:italic; border-left:2px solid var(–gold); padding-left:20px; margin-top:28px; font-family:Georgia,serif; }
@@ -99,8 +116,8 @@ h2 { font-size:clamp(1.8rem, 3.5vw, 2.8rem); font-weight:300; color:var(–ivory
 .logo-circle { display:flex; justify-content:center; }
 .logo-circle-inner { background:var(–forest-mid); border:1px solid rgba(201,168,76,.15); border-radius:50%; padding:28px; }
 
-/* ── CONTACT ── */
-#contact { background:var(–forest); }
+/* CONTACT */
+#contact { background:var(–charcoal); }
 .contact-header { text-align:center; margin-bottom:52px; }
 .contact-form { display:grid; gap:14px; max-width:600px; margin:0 auto; }
 .form-input { width:100%; padding:16px 20px; background:rgba(255,255,255,.04); border:1px solid rgba(201,168,76,.2); border-radius:2px; color:var(–ivory); font-size:.9rem; font-family:sans-serif; outline:none; transition:border-color .2s; }
@@ -120,7 +137,7 @@ textarea.form-input { resize:vertical; min-height:140px; }
 .sent-icon { font-size:36px; margin-bottom:16px; }
 .sent-text { font-size:1.1rem; color:var(–gold-lt); font-family:sans-serif; }
 
-/* ── FOOTER ── */
+/* FOOTER */
 footer { background:var(–charcoal); border-top:1px solid rgba(201,168,76,.08); padding:32px 48px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px; }
 .footer-logo { display:flex; align-items:center; gap:8px; }
 .footer-logo-name { font-size:12px; color:rgba(245,240,232,.4); font-family:sans-serif; letter-spacing:.06em; }
@@ -133,25 +150,30 @@ footer { background:var(–charcoal); border-top:1px solid rgba(201,168,76,.08);
 .footer-insta:hover { color:var(–gold); }
 .footer-domain { font-size:9px; color:rgba(245,240,232,.22); font-family:sans-serif; letter-spacing:.1em; }
 
-/* ── FADE IN ── */
+/* FADE IN */
 .fade-in { opacity:0; transform:translateY(24px); transition:opacity .7s ease, transform .7s ease; }
 .fade-in.visible { opacity:1; transform:translateY(0); }
 
 @keyframes fadeUp { from { opacity:0; transform:translateY(20px); } to { opacity:1; transform:translateY(0); } }
 @keyframes pulse { 0%,100% { opacity:1; } 50% { opacity:.25; } }
 
-/* ── RESPONSIVE ── */
+/* RESPONSIVE */
 @media(max-width:900px) {
+.numbers-grid { grid-template-columns:repeat(2,1fr); }
 .about-grid { grid-template-columns:1fr; gap:40px; }
 .services-grid { grid-template-columns:1fr 1fr; }
+.method-grid { grid-template-columns:repeat(3,1fr); }
 .contact-info { grid-template-columns:1fr 1fr; }
 }
 @media(max-width:640px) {
 nav { padding:0 20px; }
 .nav-links { display:none; }
 section, #hero { padding:80px 24px; }
+#numbers { padding:40px 24px; }
 .hero-bg-e { font-size:260px; }
 .services-grid { grid-template-columns:1fr; }
+.method-grid { grid-template-columns:1fr 1fr; }
+.numbers-grid { grid-template-columns:repeat(2,1fr); }
 .contact-info { grid-template-columns:1fr; }
 footer { padding:24px; flex-direction:column; text-align:center; }
 .footer-middle, .footer-right { justify-content:center; }
@@ -178,6 +200,7 @@ footer { padding:24px; flex-direction:column; text-align:center; }
   </a>
   <div class="nav-links">
     <a href="#services" data-pt="Serviços" data-en="Services">Serviços</a>
+    <a href="#methodology" data-pt="Metodologia" data-en="Methodology">Metodologia</a>
     <a href="#about" data-pt="Sobre" data-en="About">Sobre</a>
     <a href="#contact" data-pt="Contacto" data-en="Contact">Contacto</a>
   </div>
@@ -196,12 +219,12 @@ footer { padding:24px; flex-direction:column; text-align:center; }
   <div class="hero-grid"></div>
   <div class="hero-bg-e">E</div>
   <div class="hero-content">
-    <div class="eyebrow" data-pt="Consultoria de Gestão · Portugal &amp; Angola" data-en="Management Consulting · Portugal &amp; Angola">Consultoria de Gestão · Portugal &amp; Angola</div>
+    <div class="eyebrow" data-pt="Consultoria de Gestão · Portugal &amp; Angola · Desde 2023" data-en="Management Consulting · Portugal &amp; Angola · Since 2023">Consultoria de Gestão · Portugal &amp; Angola · Desde 2023</div>
     <h1>
       <span data-pt="Estruture o seu negócio." data-en="Structure your business.">Estruture o seu negócio.</span><br>
       <em data-pt="Eleve os resultados." data-en="Elevate your results.">Eleve os resultados.</em>
     </h1>
-    <p class="hero-p" data-pt="Apoiamos PMEs em Portugal e Angola a crescer com estratégia clara, processos eficientes e sustentabilidade como princípio transversal." data-en="We support SMEs in Portugal and Angola to grow with clear strategy, efficient processes and sustainability as a core principle.">Apoiamos PMEs em Portugal e Angola a crescer com estratégia clara, processos eficientes e sustentabilidade como princípio transversal.</p>
+    <p class="hero-p" data-pt="Mais de 40 projectos entregues em Portugal e Angola. Apoiamos PMEs a crescer com estratégia clara, processos eficientes e sustentabilidade como princípio transversal." data-en="Over 40 projects delivered across Portugal and Angola. We help SMEs grow with clear strategy, efficient processes and sustainability as a core principle.">Mais de 40 projectos entregues em Portugal e Angola. Apoiamos PMEs a crescer com estratégia clara, processos eficientes e sustentabilidade como princípio transversal.</p>
     <div class="hero-btns">
       <a href="#services" class="btn-primary" data-pt="Ver Serviços" data-en="Our Services">Ver Serviços</a>
       <a href="#about" class="btn-ghost" data-pt="Sobre Nós" data-en="About Us">Sobre Nós</a>
@@ -209,6 +232,29 @@ footer { padding:24px; flex-direction:column; text-align:center; }
   </div>
   <div class="scroll-hint"><span>scroll</span><div class="scroll-line"></div></div>
 </section>
+
+<!-- NUMBERS -->
+
+<div id="numbers">
+  <div class="numbers-grid">
+    <div class="number-item fade-in">
+      <div class="number-value">20+</div>
+      <div class="number-label" data-pt="Clientes satisfeitos" data-en="Satisfied clients">Clientes satisfeitos</div>
+    </div>
+    <div class="number-item fade-in">
+      <div class="number-value">40+</div>
+      <div class="number-label" data-pt="Projectos entregues" data-en="Projects delivered">Projectos entregues</div>
+    </div>
+    <div class="number-item fade-in">
+      <div class="number-value">2</div>
+      <div class="number-label" data-pt="Mercados · Portugal &amp; Angola" data-en="Markets · Portugal &amp; Angola">Mercados · Portugal &amp; Angola</div>
+    </div>
+    <div class="number-item fade-in">
+      <div class="number-value">3+</div>
+      <div class="number-label" data-pt="Anos de experiência comprovada" data-en="Years of proven experience">Anos de experiência comprovada</div>
+    </div>
+  </div>
+</div>
 
 <!-- SERVICES -->
 
@@ -255,6 +301,51 @@ footer { padding:24px; flex-direction:column; text-align:center; }
   </div>
 </section>
 
+<!-- METHODOLOGY -->
+
+<section id="methodology">
+  <div class="section-inner">
+    <div class="fade-in">
+      <p class="section-label" data-pt="Como trabalhamos" data-en="How we work">Como trabalhamos</p>
+      <h2 data-pt="A Nossa Metodologia" data-en="Our Methodology">A Nossa Metodologia</h2>
+      <p class="section-sub" data-pt="Um processo estruturado que transforma desafios em resultados concretos e mensuráveis." data-en="A structured process that turns challenges into concrete, measurable results.">Um processo estruturado que transforma desafios em resultados concretos e mensuráveis.</p>
+      <div class="gold-line"></div>
+    </div>
+    <div class="method-grid">
+      <div class="method-step fade-in">
+        <div class="method-num">01</div>
+        <div class="method-icon">◎</div>
+        <div class="method-title" data-pt="Diagnóstico" data-en="Diagnosis">Diagnóstico</div>
+        <p class="method-desc" data-pt="Análise profunda da situação actual — processos, equipa, mercado e objectivos." data-en="Deep analysis of the current situation — processes, team, market and goals.">Análise profunda da situação actual — processos, equipa, mercado e objectivos.</p>
+      </div>
+      <div class="method-step fade-in">
+        <div class="method-num">02</div>
+        <div class="method-icon">◈</div>
+        <div class="method-title" data-pt="Planeamento" data-en="Planning">Planeamento</div>
+        <p class="method-desc" data-pt="Definição de estratégia, recursos, cronograma e indicadores de sucesso." data-en="Strategy definition, resources, timeline and success indicators.">Definição de estratégia, recursos, cronograma e indicadores de sucesso.</p>
+      </div>
+      <div class="method-step fade-in">
+        <div class="method-num">03</div>
+        <div class="method-icon">◉</div>
+        <div class="method-title" data-pt="Execução" data-en="Execution">Execução</div>
+        <p class="method-desc" data-pt="Implementação lado a lado com a equipa do cliente, com foco em resultados rápidos." data-en="Implementation side by side with the client's team, focused on quick wins.">Implementação lado a lado com a equipa do cliente, com foco em resultados rápidos.</p>
+      </div>
+      <div class="method-step fade-in">
+        <div class="method-num">04</div>
+        <div class="method-icon">⬡</div>
+        <div class="method-title" data-pt="Controlo" data-en="Control">Controlo</div>
+        <p class="method-desc" data-pt="Monitorização contínua dos indicadores e ajustes em tempo real." data-en="Continuous monitoring of indicators and real-time adjustments.">Monitorização contínua dos indicadores e ajustes em tempo real.</p>
+      </div>
+      <div class="method-step fade-in">
+        <div class="method-num">05</div>
+        <div class="method-icon">❋</div>
+        <div class="method-title" data-pt="Entrega" data-en="Delivery">Entrega</div>
+        <p class="method-desc" data-pt="Resultados documentados, equipa capacitada e sustentabilidade garantida no longo prazo." data-en="Documented results, empowered team and long-term sustainability guaranteed.">Resultados documentados, equipa capacitada e sustentabilidade garantida no longo prazo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 
 <section id="about">
@@ -264,7 +355,7 @@ footer { padding:24px; flex-direction:column; text-align:center; }
         <p class="section-label" data-pt="Quem somos" data-en="Who we are">Quem somos</p>
         <h2 data-pt="Sobre a Elevate" data-en="About Elevate">Sobre a Elevate</h2>
         <p data-pt="A Elevate Consulting nasceu em 2023 com uma convicção simples: as PMEs merecem consultoria de qualidade, adaptada à sua realidade e com foco em resultados concretos." data-en="Elevate Consulting was founded in 2023 with a simple conviction: SMEs deserve quality consulting, adapted to their reality and focused on concrete results.">A Elevate Consulting nasceu em 2023 com uma convicção simples: as PMEs merecem consultoria de qualidade, adaptada à sua realidade e com foco em resultados concretos.</p>
-        <p data-pt="Trabalhamos lado a lado com os nossos clientes em Portugal e Angola, combinando rigor metodológico com conhecimento profundo dos mercados ibérico e africano." data-en="We work side by side with our clients in Portugal and Angola, combining methodological rigour with deep knowledge of Iberian and African markets.">Trabalhamos lado a lado com os nossos clientes em Portugal e Angola, combinando rigor metodológico com conhecimento profundo dos mercados ibérico e africano.</p>
+        <p data-pt="Em menos de 3 anos, trabalhámos com mais de 20 clientes e entregámos mais de 40 projectos em Portugal e Angola, combinando rigor metodológico com conhecimento profundo dos dois mercados." data-en="In less than 3 years, we worked with over 20 clients and delivered more than 40 projects across Portugal and Angola, combining methodological rigour with deep knowledge of both markets.">Em menos de 3 anos, trabalhámos com mais de 20 clientes e entregámos mais de 40 projectos em Portugal e Angola, combinando rigor metodológico com conhecimento profundo dos dois mercados.</p>
         <p class="about-quote" data-pt="A sustentabilidade não é um serviço que vendemos — é a forma como trabalhamos." data-en="Sustainability is not a service we sell — it is the way we work.">A sustentabilidade não é um serviço que vendemos — é a forma como trabalhamos.</p>
       </div>
       <div class="fade-in">
@@ -299,16 +390,15 @@ footer { padding:24px; flex-direction:column; text-align:center; }
       <p class="section-sub" style="margin:0 auto;" data-pt="Pronto para elevar o seu negócio? Fale connosco." data-en="Ready to elevate your business? Let's talk.">Pronto para elevar o seu negócio? Fale connosco.</p>
     </div>
     <div id="contact-form-wrap" class="fade-in">
-      <form class="contact-form" onsubmit="handleSubmit(event)">
-        <input class="form-input" type="text" placeholder="Nome" required>
-        <input class="form-input" type="email" placeholder="Email" required>
-        <textarea class="form-input" placeholder="Mensagem" rows="5" required></textarea>
+      <form class="contact-form" action="https://formsubmit.co/geral@elevateconsulting.pt" method="POST">
+        <input type="hidden" name="_subject" value="Novo contacto · Elevate Consulting">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://elevateconsulting.pt#contact">
+        <input class="form-input" type="text" name="nome" placeholder="Nome" required>
+        <input class="form-input" type="email" name="email" placeholder="Email" required>
+        <textarea class="form-input" name="mensagem" placeholder="Mensagem" rows="5" required></textarea>
         <button type="submit" class="btn-submit" data-pt="Enviar Mensagem" data-en="Send Message">Enviar Mensagem</button>
       </form>
-      <div class="sent-msg" id="sent-msg">
-        <div class="sent-icon">✦</div>
-        <p class="sent-text" data-pt="Mensagem enviada. Em breve entraremos em contacto." data-en="Message sent. We'll be in touch shortly.">Mensagem enviada. Em breve entraremos em contacto.</p>
-      </div>
     </div>
     <div class="contact-info fade-in">
       <div class="contact-item">
@@ -387,11 +477,6 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-function handleSubmit(e) {
-  e.preventDefault();
-  document.querySelector('.contact-form').style.display = 'none';
-  document.getElementById('sent-msg').classList.add('visible');
-}
 </script>
 
 </body>
